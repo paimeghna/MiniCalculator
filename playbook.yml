@@ -7,4 +7,4 @@
         cmd: docker login
     - name: Pulling the Image
       shell:
-        cmd: docker pull mehakdogra0067/scientific_calculator:latest
+        cmd: docker pull pmeghna/calc_img:latest
