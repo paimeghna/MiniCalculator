@@ -1,0 +1,2 @@
+[ubuntu]
+172.16.144.149 ansible_ssh_user=pmeghna remote_user=pmeghna

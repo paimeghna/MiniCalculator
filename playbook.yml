@@ -1,0 +1,10 @@
+---
+- name: Pull the image in production host and create the container
+  hosts: all
+  tasks:
+    - name: Docker login
+      shell:
+        cmd: docker login
+    - name: Pulling the Image
+      shell:
+        cmd: docker pull mehakdogra0067/scientific_calculator:latest
