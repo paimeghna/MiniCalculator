@@ -1,10 +1,8 @@
 ---
-- name: Pull the image in production host and create the container
+- name: Pull docker image
   hosts: all
   tasks:
-    - name: Docker login
-      shell:
-        cmd: docker login
-    - name: Pulling the Image
-      shell:
-        cmd: docker pull pmeghna/calc_img:latest
+    - name: Pull Image
+      docker_image:
+        name: pmeghna/calc_img:latest
+        source: pull
