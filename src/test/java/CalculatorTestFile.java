@@ -10,16 +10,16 @@ public class CalculatorTestFile {
 
     @Test
     public void squareRootTruePositive  (){
-        assertEquals("Square Root of number for True Positive", 3.0, cal.squareRoot(9), DELTA);
-        assertEquals("Square Root of number for True Positive", 4.0, cal.squareRoot(16), DELTA);
-        assertEquals("Square Root of number for True Positive", Double.NaN, cal.squareRoot(-10), DELTA);
+        assertEquals("SqRoot of number for True Positive", 3.0, cal.squareRoot(9), DELTA);
+        assertEquals("SqRoot of number for True Positive", 4.0, cal.squareRoot(16), DELTA);
+        assertEquals("SqRoot of number for True Positive", Double.NaN, cal.squareRoot(-10), DELTA);
     }
 
     @Test
     public void squareRootFalsePositive(){
-        assertNotEquals("Square Root of number for False Positive", 4.0, cal.squareRoot(10), DELTA);
-        assertNotEquals("Square Root of number for False Positive", 5.0, cal.squareRoot(16), DELTA);
-        assertNotEquals("Square Root of number for False Positive", 5.0, cal.squareRoot(-16), DELTA);
+        assertNotEquals("SqRoot of number for False Positive", 4.0, cal.squareRoot(10), DELTA);
+        assertNotEquals("SqRoot of number for False Positive", 5.0, cal.squareRoot(16), DELTA);
+        assertNotEquals("SqRoot of number for False Positive", 5.0, cal.squareRoot(-16), DELTA);
     }
 
     @Test
@@ -39,16 +39,16 @@ public class CalculatorTestFile {
 
     @Test
     public void naturalLogTruePositive(){
-        assertEquals("Naturallog of number for True positive", 2.833213344056216,cal.naturalLog(17), DELTA);
-        assertEquals("Naturallog of number for True positive", 1.791759469228055,cal.naturalLog(6), DELTA);
-        assertEquals("Naturallog of number for True positive", Double.NaN, cal.naturalLog(0), DELTA);
+        assertEquals("Natural Log of number for True positive", 2.833213344056216,cal.naturalLog(17), DELTA);
+        assertEquals("Natural Log of number for True positive", 1.791759469228055,cal.naturalLog(6), DELTA);
+        assertEquals("Natural Log of number for True positive", Double.NaN, cal.naturalLog(0), DELTA);
     }
 
     @Test
     public void naturalLogFalsePositive(){
-        assertNotEquals("Naturallog of number for False positive", 2.833213344056216,cal.naturalLog(14), DELTA);
-        assertNotEquals("Naturallog of number for False positive", 1.791759469228055,cal.naturalLog(9), DELTA);
-        assertNotEquals("Naturallog of number for False positive", 0, cal.naturalLog(0), DELTA);
+        assertNotEquals("Natural Log of number for False positive", 2.833213344056216,cal.naturalLog(14), DELTA);
+        assertNotEquals("Natural Log of number for False positive", 1.791759469228055,cal.naturalLog(9), DELTA);
+        assertNotEquals("Natural Log of number for False positive", 0, cal.naturalLog(0), DELTA);
     }
 
     @Test
